@@ -19,7 +19,12 @@ pipeline {
         }
 		stage('Deploy') {
             steps {
-                echo 'This is the first Deploy step'
+                 script {
+            if (fileExists('/var/lib/jenkins/workspace/pipelineproj2/Jenkinsfile') {
+                echo "File /var/lib/jenkins/workspace/pipelineproj2/Jenkinsfile found!"
+            }
+        }
+           		
             }
         }
 		stage('Delivery') {
