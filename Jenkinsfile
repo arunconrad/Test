@@ -30,6 +30,7 @@ pipeline {
 		stage('Monitor') {
             steps {
                 echo 'This is my first pipeline syntax setup'
+		fileExists '/var/lib/jenkins/workspace/pipelineproj2/Jenkinsfile'
             }
         }
     }
