@@ -21,9 +21,9 @@ pipeline {
             steps {
                  script {
             if (fileExists('/var/lib/jenkins/workspace/pipelineproj2/Jenkinsfile') {
-                echo "File /var/lib/jenkins/workspace/pipelineproj2/Jenkinsfile found!"
+                echo "File /var/lib/jenkins/workspace/pipelineproj2/Jenkinsfile found!")
             }
-        }
+		}
            		
             }
         }
