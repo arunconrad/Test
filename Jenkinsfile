@@ -20,10 +20,9 @@ pipeline {
 		stage('Deploy') {
             steps {
                  script {
-            if (fileExists('/var/lib/jenkins/workspace/pipelineproj2/Jenkinfile')) {
+            if (!fileExists('/var/lib/jenkins/workspace/pipelineproj2/Jenkinfile')) {
                 echo "File /var/lib/jenkins/workspace/pipelineproj2/Jenkinsfile found!"
-	    else
-		 echo "File not found"
+	    
             }
 		}
            		
