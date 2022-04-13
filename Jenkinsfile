@@ -29,7 +29,7 @@ pipeline {
         }
 		stage('Monitor') {
             steps {
-                echo 'This is the first Monitor step'
+                echo 'This is my first pipeline syntax setup'
             }
         }
     }
